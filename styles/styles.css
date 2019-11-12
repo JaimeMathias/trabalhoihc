@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
 .blue-container {
 	background-color: rgb(12, 170, 165);
 	width: 100%;
