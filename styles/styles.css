@@ -169,7 +169,6 @@ h2 {
 }
 
 .opcoes, .clinicas {
-	max-width: 70%;
 	display: inline-block
 }
 
@@ -197,7 +196,7 @@ h2 {
 	}
 
 	.opcoes {
-		width: 20em
+		width: 20em;
 	}
 
 	.selectboxes li select {
@@ -224,9 +223,6 @@ h2 {
 		margin-bottom: 1.3em;
 	}
 	
-	.clinicas {
-		max-width: 100%;
-	}
 	
 	.container .card{
 		width: 12em;
