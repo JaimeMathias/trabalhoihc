@@ -177,10 +177,6 @@ h2 {
 	display: none;
 }
 
-.container {
-	width: 100em;
-}
-
 @media only screen and (min-width: 650px) {
 	.clinicas ul {
 		display: flex;
@@ -225,7 +221,7 @@ h2 {
 	}
 
 	.clinicas h2 {
-		margin-bottom: 0.5em;
+		margin-bottom: 1.3em;
 	}
 	
 	.clinicas {
