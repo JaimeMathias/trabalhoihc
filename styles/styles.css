@@ -177,6 +177,10 @@ h2 {
 	display: none;
 }
 
+.container {
+	width: 100em;
+}
+
 @media only screen and (min-width: 650px) {
 	.clinicas ul {
 		display: flex;
