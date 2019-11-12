@@ -8,7 +8,7 @@ const cidades = ['', 'São Vicente', 'São Paulo', 'Praia Grande'];
 const especialidades = ['', 'Oftalmologista', 'Pediatra', 'Psicologo'];
 
 
-op1.addEventListener('click', () => {
+op1.addEventListener('click', (e) => {
     if (op1.options[op1.selectedIndex].text == 'SP') {
         novo = document.createElement('option');
         while (op2.length - 1) {
@@ -33,9 +33,11 @@ op1.addEventListener('click', () => {
         op2.options[0].text = '--';
         op3.options[0].text = '--';
     }
+    op2.click(); // Assim atualiza a outra option
+    e.preventDefault();
 });
 
-op2.addEventListener('change', () => {
+op2.addEventListener('click', (e) => {
     if (op2.options[op2.selectedIndex].text == 'Santos') {
         novo = document.createElement('option');
         while (op3.length - 1) {
@@ -78,15 +80,17 @@ op2.addEventListener('change', () => {
             op3.add(novo, op3.options[i]);
         }
     }
+    e.preventDefault();
 });
 
 const btn = document.getElementById('btn');
 const ativar = document.getElementById('clinicas');
 
-btn.addEventListener('click', () => {
-    if (op3.options[op3.selectedIndex].text != '--') {
+btn.addEventListener('click', (e) => {
+    if (op3.options[op3.selectedIndex].text != '--' && ativar.attributes[0].value == 'clinicas hide') {
         ativar.classList.toggle('hide'); // Se usar o 'clinicas' como tava antes, dava merda quando trocava o display pra flex, ent em q usar uma outra classe só pra isso
     }
+    e.preventDefault();
 });
 
 const nav = document.getElementById('nav');

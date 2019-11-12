@@ -5,10 +5,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
-    color: white;
-}
-
 .blue-container {
 	background-color: rgb(12, 170, 165);
 	width: 100%;
@@ -25,7 +21,7 @@ a {
 }
 
 a:visited {
-	color: inherit;
+	color: inherit;	
 }
 
 .header .nome {
@@ -35,14 +31,10 @@ a:visited {
 
 .container {
 	text-align: center;
+	align-items: center;
 	margin: 0;
     padding: .8em 1.2em;
 }
-
-.hide {
-    display: none;
-}
-
 
 ul {
     list-style-type: none;
@@ -72,6 +64,8 @@ p {
 	margin-bottom: 2em;
 	box-shadow: none;
 	outline: none;
+	font-family: inherit;
+	font-weight: 500;
 }
 
 .selectboxes li select:focus {
@@ -103,7 +97,7 @@ p {
 	border: 4px solid rgb(32, 201, 195);
 	border-radius: 5px;
 	margin-bottom: 2em;
-	width: 70%;
+	width: 300px;
 	display: inline-block;
 }
 
@@ -170,6 +164,46 @@ footer ul li:last-child {
 	color: rgb(209, 208, 208);
 }
 
+h2 {
+	text-align: start;
+}
+
+.opcoes, .clinicas {
+	max-width: 70%;
+	display: inline-block
+}
+
+.hide {
+	display: none;
+}
+
+@media only screen and (min-width: 650px) {
+	.clinicas ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	/* .clinicas .card {
+		width: 50%;
+		margin-right: 0.2em; 
+	} */
+
+	.clinicas ul li:first-child {
+		margin-right: 0.5em;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.opcoes {
+		width: 20em
+	}
+
+	.selectboxes li select {
+		width: 100%;
+	}
+}
 
 @media only screen and (min-width: 1024px) {
 	.boa {
@@ -190,10 +224,14 @@ footer ul li:last-child {
 		margin-bottom: 0.5em;
 	}
 	
+	.clinicas {
+		max-width: 100%;
+	}
+	
 	.container .card{
-		width: 80%;
+		width: 12em;
 		font-size: 0.8em;
-		margin: 1.5em 3em;
+		/* margin: 1.5em 3em; */
 	}
 
 	.container .card img {
@@ -203,5 +241,25 @@ footer ul li:last-child {
 	.container .card-text {
 		margin: 0;
 		font-size: 1em;
+	}
+
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
+
+	h2 {
+		text-align: start;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+	.clinicas .card {
+		width: 14em;
+	}
+
+	.clinicas ul li:first-child {
+		padding-right: 2em;
 	}
 }
