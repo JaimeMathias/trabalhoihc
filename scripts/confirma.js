@@ -27,7 +27,8 @@ voltar.addEventListener('click', (e) => {
 });
 
 const boa = document.getElementsByClassName('mudar');
-
-for (var i = 0; i < 7; i++) {
-    boa[i].textContent = window.sessionStorage.getItem('item' + i);
+if (window.sessionStorage.getItem('item0')) {
+    for (var i = 0; i < 7; i++) {
+        boa[i].textContent = window.sessionStorage.getItem('item' + i);
+    }
 }
