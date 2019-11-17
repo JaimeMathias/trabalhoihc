@@ -449,4 +449,10 @@ h1 {
   }
 
 }
+
+.facebook {
+  padding-top: 2em;
+  width: 60px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=agendamento.css.map */
