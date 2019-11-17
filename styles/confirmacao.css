@@ -274,6 +274,10 @@ h1 {
   cursor: pointer;
 }
 
+.dr, .de, .fe, .ne {
+  display: none;
+}
+
 @media only screen and (max-width: 848px) {
   .main {
     -ms-flex-wrap: wrap;

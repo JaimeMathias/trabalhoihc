@@ -250,6 +250,7 @@ h1 {
 
 .right .medicos .card img {
   width: 298px;
+  height: 200px;
 }
 
 .right .medicos .card .selecionar {
@@ -265,7 +266,7 @@ h1 {
   cursor: pointer;
 }
 
-input:focus {
+.input:focus {
   border: 1px solid #2DC1D2 !important;
   border-left: 0.5em solid #1c8591 !important;
 }
@@ -297,7 +298,7 @@ input:focus {
     -webkit-column-gap: 2em;
             column-gap: 2em;
     row-gap: 2em;
-    overflow-x: none;
+    overflow-x: hidden;
   }
   .right .medicos .card {
     width: 298px;
@@ -375,7 +376,7 @@ input:focus {
     -webkit-column-gap: 2em;
             column-gap: 2em;
     row-gap: 2em;
-    overflow-x: none;
+    overflow: hidden;
   }
   .right .medicos .card {
     width: 298px;

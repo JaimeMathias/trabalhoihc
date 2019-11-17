@@ -28,8 +28,8 @@ const input = document.querySelectorAll('input');
 // }
 
 // input.forEach(addEventListener('blur', storage));
-input[7].addEventListener('click', storage);
 const selecionar = document.querySelectorAll('button');
+input[7].addEventListener('click', storage);
 selecionar[0].addEventListener('click', storage);
 selecionar[1].addEventListener('click', storage);
 selecionar[2].addEventListener('click', storage);
@@ -39,3 +39,19 @@ function storage() {
         window.sessionStorage.setItem('item' + i, input[i].value);
     }
 }
+
+input[7].addEventListener('click', () => {
+    window.sessionStorage.setItem('medico', 'derek');
+});
+
+selecionar[0].addEventListener('click', () => {
+    window.sessionStorage.setItem('medico', 'drauzio');
+});
+
+selecionar[1].addEventListener('click', () => {
+    window.sessionStorage.setItem('medico', 'fernando');
+});
+
+selecionar[2].addEventListener('click', () => {
+    window.sessionStorage.setItem('medico', 'neymar');
+});

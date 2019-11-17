@@ -11,6 +11,10 @@ menu.addEventListener('click', (e) => {
     e.preventDefault();
 });
 
+
+
+
+
 const sim = document.getElementById('sim');
 const voltar = document.getElementById('voltar');
 
@@ -26,9 +30,41 @@ voltar.addEventListener('click', (e) => {
     e.preventDefault();
 });
 
+
+
+
+
 const boa = document.getElementsByClassName('mudar');
+const mudar2 = document.getElementsByClassName('mudar2');
+
 if (window.sessionStorage.getItem('item0')) {
     for (var i = 0; i < 7; i++) {
         boa[i].textContent = window.sessionStorage.getItem('item' + i);
     }
+}
+
+if (window.sessionStorage.getItem('opcoes1')) {
+    for (var i = 0; i < 3; i++) {
+        mudar2[i].textContent = window.sessionStorage.getItem('opcoes' + i);
+    }
+}
+
+const dr = document.getElementById('dr');
+const fe = document.getElementById('fe');
+const de = document.getElementById('de');
+const ne = document.getElementById('ne');
+
+const medico = window.sessionStorage.getItem('medico');
+
+if (medico == 'drauzio') {
+    dr.classList.toggle('dr');
+}
+else if (medico == 'fernando') {
+    fe.classList.toggle('fe');
+}
+else if (medico == 'derek') {
+    de.classList.toggle('de');
+}
+else if (medico == 'neymar') {
+    ne.classList.toggle('ne');
 }

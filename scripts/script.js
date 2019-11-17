@@ -92,6 +92,9 @@ btn.addEventListener('click', (e) => {
     if (op3.value != '--' && ativar.attributes[0].value == 'clinicas hide') {
         ativar.classList.toggle('hide'); // Se usar o 'clinicas' como tava antes, dava merda quando trocava o display pra flex, ent em q usar uma outra classe só pra isso
     }
+    window.sessionStorage.setItem('opcoes0', op1.value + " - Brasil");
+    window.sessionStorage.setItem('opcoes1', op2.value);
+    window.sessionStorage.setItem('opcoes2', op3.value);
     e.preventDefault();
 });
 
