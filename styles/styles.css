@@ -225,8 +225,8 @@ h2 {
 	min-height: calc(100vh - 353px);
 }
 
-.endereco {
-	color: rgb(22,22,22);
+p.endereco {
+	color: #828282 !important;
 }
 
 @media only screen and (min-width: 650px) {
