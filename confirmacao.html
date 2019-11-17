@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirmacao</title>
+    <link rel="stylesheet" href="styles/confirmacao.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+</head>
+<body>
+    <div class="blue-container">
+        <header>
+            <div class="header">
+                <div>
+                    <img src="images/logo.svg" alt="" class="logo">
+                    <a href="index.html" class="nome">Clínicas Médicas</a>
+                </div>	
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="Ativar menu" class="menu" id="menu">
+                </a>
+            </div>
+            <nav class="nav" style="display: none;" id="nav">
+                <ul>
+                    <li><a href="#">Minha Conta</a></li>
+                    <li><a href="#">Minhas Consultas</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="informacoes">
+                <h1>Informações</h1>
+                <ul class="infos">
+                    <li>
+                        <p class="estado">
+                            São Paulo - Brasil
+                        </p>
+                    </li>
+                    <li>
+                        <p class="cidade">
+                            Santos
+                        </p>
+                    </li>
+                    <li>
+                        <p class="especialidade">
+                            Nutricionista
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="images/clínica-mega-imagem-squarelogo-1554780359501.png" alt="Imagem da Clinica Mega Imagem" class="imgclinica">
+                <div class="cardhead">
+                    <p class="nomedaclinica">Clinica Mega Imagem</p>
+                    <p class="endereco">Av. Bernandinho de Campos nº1002</p>
+                </div>
+                <div class="mapaenota">
+                    <a href="#" class="mapa">Mapa</a>
+                    <p>Nota: 4.8</p>
+                </div>
+            </div>
+        </div>
+        <div class="centro">
+            <div class="dadospessoais">
+                <h1>Dados Pessoais</h1>
+                <ul class="dados">
+                    <li class="nomecompleto">
+                        <p class="mudar">Jaime Mathias de Lara Bueno da Silva</p>
+                    </li>
+                    <li class="email">
+                        <p class="mudar">jaimemathias@hotmail.com</p>
+                    </li>
+                    <li class="rg">
+                        <p class="mudar">39.234.112-2</p>
+                    </li>
+                    <li class="cpf">
+                        <p class="mudar">490.747.498-95</p>
+                    </li>
+                    <li class="telefone">
+                        <p class="mudar">(13) 99118-5672</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="agendamento">
+                <h1>Agendamento</h1>
+                <ul class="agenda">
+                    <li class="data">
+                        <p class="mudar">22/01/2020</p>
+                    </li>
+                    <li class="hora">
+                        <p class="mudar">12:00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="medico">
+                <h1>Médico</h1>
+                <div class="card">
+                    <img src="images/drauzio-varella-20170511-069.svg" alt="Imagem da Clinica Mega Imagem" class="imgclinica">
+                    <div class="cardhead">
+                        <p class="nomedomedico">Drauzio Varella</p>
+                    </div>
+                    <div class="mapaenota">
+                        <a href="#" class="perfil">Perfil</a>
+                        <p>Nota: 4.8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="confirmacao">
+                <p>
+                    Podemos confirmar sua consulta?
+                </p>
+                <button class="sim" id="sim">Sim!</button>
+                <button class="voltar" id="voltar">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footerlogo"><a href="index.html">Clinicas Médicas</a></p>
+        <ul class="footer-links">
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Redes Sociais</a></li>
+        </ul>
+    </footer>
+    <script src="scripts/confirma.js"></script>
+</body>
+</html>

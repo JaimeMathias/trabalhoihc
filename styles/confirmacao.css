@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.blue-container {
+  background-color: #2DC1D2;
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 0em;
+  color: #fff;
+  width: 97%;
+}
+
+.header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1em;
+}
+
+.header div .logo {
+  width: 35px;
+}
+
+.header div a {
+  font-size: 1.8em;
+  padding-left: 0.4em;
+}
+
+.header a img {
+  width: 35px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding: 0.8em 0 0.1em 0;
+  color: #5c5c5c;
+}
+
+.infos li, .agenda li, .dados li {
+  background-color: #faf6f6;
+  margin: 1.1em 0;
+  border: 1px solid #8A8A8A;
+  border-left: .7em solid #504f4f;
+}
+
+.infos li p, .agenda li p, .dados li p {
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0.4em;
+  width: 15em;
+}
+
+.card {
+  border: 1px solid #A7A6A6;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left .card {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+  margin-top: 5em;
+}
+
+.left .card img {
+  width: 10em;
+}
+
+.left .card .nomedaclinica {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.left .card .endereco {
+  color: #828282;
+  font-size: 0.9rem;
+}
+
+.left .card .mapaenota {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0.5em;
+  padding: 1.5em 0;
+}
+
+.left .card .mapaenota .mapa {
+  border: none;
+  border-radius: 5px;
+  background-color: #0AC16B;
+  width: 50px;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.4em 1.5em;
+  font-weight: bold;
+}
+
+.left .card .mapaenota p {
+  margin: 0 auto;
+  color: #0AC16B;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.centro .dados li {
+  border-left-color: #504f4f;
+}
+
+.centro .agendamento {
+  padding-top: 2em;
+}
+
+.right {
+  max-width: 20em;
+}
+
+.right .medico {
+  width: 100%;
+}
+
+.right .card {
+  text-align: center;
+  max-width: 17em;
+  height: 18em;
+  margin: 1.1em 0 1.5em;
+}
+
+.right .card img {
+  width: 100%;
+}
+
+.right .card .nomedomedico {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.right .card .mapaenota {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0.5em;
+  padding: 1.2em 0;
+}
+
+.right .card .mapaenota .perfil {
+  border: none;
+  border-radius: 5px;
+  background-color: #0AC16B;
+  width: 50px;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.4em 1.5em;
+  font-weight: bold;
+}
+
+.right .card .mapaenota p {
+  margin: 0 auto;
+  color: #0AC16B;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.right .confirmacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right .confirmacao p {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #000000;
+  padding: 0.5em 0;
+  max-width: 100%;
+}
+
+.right .confirmacao .sim {
+  border: none;
+  background-color: #e63535;
+  width: 310px;
+  color: #fff;
+  font-size: 2em;
+  padding: 0.5em 0;
+  font-weight: bold;
+  margin-top: 0.2em;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.right .confirmacao .voltar {
+  border: none;
+  background-color: #515151;
+  width: 100px;
+  color: #fff;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  margin-top: 2em;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 848px) {
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .right {
+    text-align: center;
+    max-width: initial;
+  }
+  .right .medico {
+    width: 20em;
+  }
+  .right .medico h1 {
+    margin: 0.5em 0;
+  }
+  .right .card {
+    width: 15em;
+    margin: 0 auto;
+  }
+  .right .confirmacao {
+    margin-top: 1em;
+    width: 20em;
+  }
+  .right .confirmacao p {
+    font-size: 2em;
+  }
+  .right .confirmacao .sim {
+    font-size: 2rem;
+    width: 250px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .right .confirmacao .voltar {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 5em;
+  }
+  footer {
+    padding: 2.2em 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .header {
+    margin: 0;
+  }
+  .header .hide-desktop {
+    padding-right: 0.8em;
+  }
+  .main {
+    text-align: center;
+  }
+  .left .card {
+    margin-top: 1em;
+  }
+  .centro {
+    margin-top: 1.8em;
+  }
+  .footer-links {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .main {
+    max-width: 2000px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+footer {
+  background-color: #313030;
+  color: #b9b7b7;
+  width: 100%;
+  height: 18%;
+  font-size: 0.9em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5em;
+  padding: 2.2em 0;
+}
+
+footer .footerlogo {
+  font-size: 2em;
+  color: #fff;
+  padding-top: 1em;
+}
+
+footer ul {
+  padding: 3em;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+footer ul li:last-child {
+  padding-right: 0;
+}
+
+.nav {
+  width: 100%;
+  color: #fff;
+  padding: 0em 0 1em 3em;
+}
+
+.nav li {
+  padding: 0.7em;
+}
+
+.nav li a:hover {
+  color: #ecebeb;
+}
+/*# sourceMappingURL=confirmacao.css.map */
