@@ -187,8 +187,53 @@ h1 {
   padding: 0.3em;
 }
 
-.right {
-  max-width: 300px;
+@media only screen and (max-width: 800px) {
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .right div:first-child {
+    max-width: 300px;
+  }
+
+  .right .seta {
+    width: 50px;
+    padding-left: 0.5em;
+  }
+
+  .setas {
+    display: grid;
+    grid-template-columns: 58px;
+    grid-template-rows: 70px 70px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .right {
+    display: inherit;
+  }
+
+  .seta {
+    padding: 0.5em 0 0 0;
+    justify-self: center;
+  }
+
+  .setas {
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 70px;
+    justify-content: center;
+  }
+
+  .seta:nth-child(1) {
+    grid-column-start: 2;
+  }
+
+  .seta:nth-child(2) {
+    grid-column-start: 1;
+    grid-row: 1;
+  }
 }
 
 .right h1 {
@@ -303,6 +348,18 @@ h1 {
   .right .medicos .card {
     width: 298px;
   }
+
+  .right {
+    display: inherit;
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .right div {
+    max-width: 700px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -351,6 +408,11 @@ h1 {
     height: 25em;
     text-align: center;
   }
+
+  .right div {
+    max-width: 300px;
+  }
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -381,5 +443,10 @@ h1 {
   .right .medicos .card {
     width: 298px;
   }
+
+  .right div {
+    max-width: 700px;
+  }
+
 }
 /*# sourceMappingURL=agendamento.css.map */

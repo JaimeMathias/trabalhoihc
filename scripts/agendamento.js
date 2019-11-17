@@ -55,3 +55,19 @@ selecionar[1].addEventListener('click', () => {
 selecionar[2].addEventListener('click', () => {
     window.sessionStorage.setItem('medico', 'neymar');
 });
+
+
+
+const seta = document.getElementById('seta');
+const setaesquerda = document.getElementById('setaesquerda');
+const scroll = document.getElementById('scroll');
+
+seta.addEventListener('click', (e) => {
+    scroll.scrollLeft += 300;
+    e.preventDefault();
+});
+
+setaesquerda.addEventListener('click', (e) => {
+    scroll.scrollLeft -= 300;
+    e.preventDefault();
+});
