@@ -226,7 +226,7 @@ h2 {
 }
 
 .endereco {
-	color: #828282;
+	color: rgb(22,22,22);
 }
 
 @media only screen and (min-width: 650px) {
