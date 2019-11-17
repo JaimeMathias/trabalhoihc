@@ -3,11 +3,14 @@
 * {
 	outline: none;
 }
+html {
+	padding: 0;
+	margin: 0;
+}
 
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	height: 100%;
 }
 
 .blue-container {
@@ -166,6 +169,7 @@ footer {
 	color: rgb(185, 183, 183);
 	width: 100%;
 	font-size: 0.9em;
+	height: 270px;
 }
 
 footer .footerlogo {
@@ -215,6 +219,10 @@ h2 {
 
 .hide {
 	display: none;
+}
+
+.boa {
+	min-height: calc(100vh - 353px);
 }
 
 @media only screen and (min-width: 650px) {
@@ -315,7 +323,6 @@ h2 {
 
 	footer {
 		bottom: 0;
-		position: absolute;
 	}
 
 }
