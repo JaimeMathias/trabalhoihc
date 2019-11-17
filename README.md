@@ -79,7 +79,7 @@
 					<li>
 						<div class="card">
 							<a href="#"><img src="images/clínica-mega-imagem-squarelogo-1554780359501.png" class="card-img-top" alt="Imagem da Clinica Mega Imagem"></a>
-							<div class="card-body">
+							<div class="card-body">	
 								<p class="card-text">Clínica Mega Imagem</p>
 								<div class="avaliacao">
 									<p>
