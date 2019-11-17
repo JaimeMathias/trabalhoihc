@@ -225,7 +225,7 @@ h2 {
 	min-height: calc(100vh - 353px);
 }
 
-p.endereco {
+.endereco {
 	color: #828282 !important;
 }
 
