@@ -225,6 +225,11 @@ h2 {
 	min-height: calc(100vh - 353px);
 }
 
+.endereco {
+	color: #828282;
+  	font-size: 0.9rem;
+}
+
 @media only screen and (min-width: 650px) {
 	.clinicas ul {
 		display: flex;
