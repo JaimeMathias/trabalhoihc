@@ -188,7 +188,7 @@ h1 {
 
 .right .card img {
   width: 100%;
-  height: 158px;
+  max-height: 158px;
 }
 
 .right .card .nomedomedico {
