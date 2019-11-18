@@ -1,6 +1,6 @@
 # trabalhoihc.github.io
 <!DOCTYPE html>
-<html>
+<html lang='pt-br'>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,7 +74,7 @@
 									</p>
 								</div>
 							</div>
-							<button class="confirm"><a href="agendamento.html">Selecionar</a></button>
+							<button class="confirm">Selecionar</button>
 						</div>
 					</li> 
 					<li>
@@ -91,7 +91,7 @@
 									</p>
 								</div>
 							</div>
-							<button class="confirm"><a href="agendamento.html">Selecionar</a></button>
+							<button class="confirm">Selecionar</button>
 						</div>
 					</li> 
 				</ul>
