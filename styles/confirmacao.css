@@ -119,6 +119,7 @@ h1 {
 
 .left .card img {
   width: 10em;
+  max-height: 158px;
 }
 
 .left .card .nomedaclinica {
@@ -188,7 +189,6 @@ h1 {
 
 .right .card img {
   width: 100%;
-  max-height: 158px;
 }
 
 .right .card .nomedomedico {
