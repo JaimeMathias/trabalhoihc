@@ -110,3 +110,12 @@ menu.addEventListener('click', (e) => {
     }
     e.preventDefault();
 });
+
+
+const selecionar = document.getElementsByClassName('confirm');
+
+Array.from(selecionar).forEach(function(element) {
+    element.addEventListener('click', () => {
+        window.location.assign("agendamento.html");
+    });
+})

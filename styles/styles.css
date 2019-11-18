@@ -156,8 +156,8 @@ p {
 	border: none;
 	border-radius: 5px;
 	color: #fff;
-	font-size: 0.8em;
-	font-weight: 200;
+	font-size: 1.2rem;
+	font-weight: 400;
 	padding: 0.5em 1em;
 	margin-bottom: 1em;
 	outline: none;
@@ -289,10 +289,6 @@ h2 {
 
 	h2 {
 		text-align: start;
-	}
-
-	.confirm a {
-		font-size: 1.3em;
 	}
 
 	.btn {

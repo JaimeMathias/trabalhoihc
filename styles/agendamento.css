@@ -1,4 +1,4 @@
-* {
+	* {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -399,6 +399,7 @@ h1 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-overflow-scrolling: touch;
+    height: 402px;
   }
   .right .medicos .card {
     width: 298px;
@@ -439,6 +440,7 @@ h1 {
             column-gap: 2em;
     row-gap: 2em;
     overflow: hidden;
+    height: inherit;
   }
   .right .medicos .card {
     width: 298px;
